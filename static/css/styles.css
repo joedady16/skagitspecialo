@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #333;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  height: 50px;
+  width: auto; /* maintain aspect ratio */
+}
+
+main {
+  padding: 2em;
+}
+
+.hidden-info {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+body {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.hero {
+  background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2 rem 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    padding: 2rem;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 50vh;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+.red-shadow {
+  text-shadow: 2px 2px 5px red;
+}
+
+.red-shadow-pulse {
+  color: white;
+  text-shadow: 0 0 10px red;
+  animation: pulseShadow 1.5s infinite alternate;
+}
+
+@keyframes pulseShadow {
+  0% {
+    text-shadow: 0 0 5px red;
+  }
+  100% {
+    text-shadow: 0 0 20px red;
+  }
+}
+
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  text-align: center;
+}
+.calendar div {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  min-height: 60px;
+}
+.calendar .header {
+  font-weight: bold;
+  background-color: #f8f9fa;
+}
+
+#calendar {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.fc-event-title {
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  #calendar {
+    content-visibility: auto;
+  }
+  .fc .fc-toolbar-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-body {
+    font-size: 1rem;
+  }
+  .modal-title {
+    font-size: 1.2rem;
+  }
+}
+
