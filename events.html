@@ -41,7 +41,7 @@
     </section>
 
 <div class="container my-5">
-  <h2 class="text-center mb-4">Upcoming Events</h2>
+  <h2 class="text-center mb-4">Events Calendar</h2>
   <div id="calendar"></div>
 </div>
 
@@ -58,17 +58,109 @@
         <p class="mb-2"><strong>Location:</strong> <span id="eventLocation"></span></p>
         <p class="mb-0"><strong>Description:</strong> <span id="eventDescription"></span></p>
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
     </div>
   </div>
 </div>
 
+<section class="container my-5">
+  <h2 class="text-center mb-4">Program Activities</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+    <!-- Upcoming -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header bg-primary text-white fw-bold">
+          Upcoming
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Basic Pickleball</li>
+          <li class="list-group-item">Advanced Pickleball</li>
+          <li class="list-group-item">Golf <small class="text-muted">(limited capacity)</small></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Current -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header bg-success text-white fw-bold">
+          Current
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Swimming</li>
+          <li class="list-group-item">Soccer</li>
+          <li class="list-group-item">Cycling</li>
+          <li class="list-group-item">Bucket Buddies &amp; Walking Club</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Past Schedules -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header bg-secondary text-white fw-bold">
+          Past Schedules
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Bowling</li>
+          <li class="list-group-item">Volleyball</li>
+          <li class="list-group-item">Basic Basketball</li>
+          <li class="list-group-item">Advanced Basketball</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
  <!-- Download Links -->
   <div class="text-center mt-5">
-    <h4>Download Event Schedules</h4>
+    <h4>Download Current Schedules</h4>
     <a href="downloads/2025 Cycling Schedule.pdf" class="btn btn-outline-primary m-2" download>📅 2025 Cycling Schedule (PDF)</a>
     <a href="downloads/2025 Swim Schedule Final.pdf" class="btn btn-outline-primary m-2" download>📅 2025 Swim Schedule (PDF)</a>
     <a href="downloads/2025 Soccer Schedule.pdf" class="btn btn-outline-primary m-2" download>📅 2025 Soccer Schedule (PDF)</a>
     <a href="downloads/2025 YMCA Special Olympics Walking Club.pdf" class="btn btn-outline-primary m-2" download>📅 2025 Walking Club Schedule (PDF)</a>
+  </div>
+
+  <!-- Toggle Button -->
+  <div class="text-center">
+    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#previousDownloads" aria-expanded="false" aria-controls="previousDownloads">
+      See Previous Downloads
+    </button>
+  </div>
+
+  <!-- Collapsible Section -->
+  <div class="collapse mt-3" id="previousDownloads">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <a href="downloads/Previous/2024 Basic Pickleball Schedule.pdf" download>2024 Basic Pickleball Schedule</a>
+      </li>
+      <li class="list-group-item">
+        <a href="downloads/Previous/2024 Bowling Schedule.pdf" download>2024 Bowling Schedule</a>
+      </li>
+      <li class="list-group-item">
+        <a href="downloads/Previous/2024 Cycling Schedule.pdf" download>2024 Cycling Schedule</a>
+      </li>
+      <li class="list-group-item">
+        <a href="downloads/Previous/2024 Soccer Schedule.pdf" download>2024 Soccer Schedule</a>
+      </li>
+      <li class="list-group-item">
+        <a href="downloads/Previous/2024 Swim Schedule.pdf" download>2024 Swim Schedule</a>
+      </li>
+      <li class="list-group-item">
+        <a href="downloads/Previous/2024 Volleyball Schedule.pdf" download>2024 Volleyball Schedule</a>
+      </li>
+      <li class="list-group-item">
+        <a href="downloads/Previous/2024-25 Basic Basketball.pdf" download>2024-25 Basic Basketball Schedule</a>
+      </li>
+      <li class="list-group-item">
+        <a href="downloads/Previous/Skagit Special Olympics 2024 Walking Club.pdf" download>2024 Walking Club Schedule</a>
+      </li>
+    </ul>
   </div>
 
   <!-- footer -->
@@ -186,6 +278,5 @@
     calendar.render();
   });
 </script>
-
 </body>
 </html>
