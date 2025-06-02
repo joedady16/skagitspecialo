@@ -187,3 +187,27 @@ footer {
   font-weight: bold;
   margin-bottom: 2rem;
 }
+
+/* Limit carousel width on desktop */
+@media (min-width: 768px) {
+  #customCarousel {
+    max-width: 800px;  /* Adjust as needed */
+  }
+}
+
+/* Apply grayscale to non-active images */
+.carousel-img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.carousel-item.active .carousel-img {
+  filter: grayscale(0%);
+}
+
+
+.partner-logo {
+  max-height: 100px;
+  object-fit: contain;
+}
+
